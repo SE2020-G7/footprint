@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/homepage/homepage"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000056",
+    "navigationBarTitleText": "足之迹",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000056",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "images/map_blank.png",
+      "selectedIconPath": "images/map_click.png",
+      "text": "地图"
+    }, {
+      "pagePath": "pages/homepage/homepage",
+      "iconPath": "images/homepage_blank.png",
+      "selectedIconPath": "images/homepage_click.png",
+      "text": "主页"
+    }]
+  },
+  "style": "v2"
+}
