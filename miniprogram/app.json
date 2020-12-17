@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/login/login",
     "pages/index/index",
     "pages/homepage/homepage"
   ],
@@ -13,17 +14,21 @@
   "tabBar": {
     "color": "#000000",
     "selectedColor": "#000056",
-    "list": [{
-      "pagePath": "pages/index/index",
-      "iconPath": "images/map_blank.png",
-      "selectedIconPath": "images/map_click.png",
-      "text": "地图"
-    }, {
-      "pagePath": "pages/homepage/homepage",
-      "iconPath": "images/homepage_blank.png",
-      "selectedIconPath": "images/homepage_click.png",
-      "text": "主页"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/map_blank.png",
+        "selectedIconPath": "images/map_click.png",
+        "text": "地图"
+      },
+      {
+        "pagePath": "pages/homepage/homepage",
+        "iconPath": "images/homepage_blank.png",
+        "selectedIconPath": "images/homepage_click.png",
+        "text": "主页"
+      }
+    ]
   },
-  "style": "v2"
+  "style": "v2",
+  "sitemapLocation": "sitemap75.json"
 }

@@ -1,0 +1,54 @@
+page {
+  width: 100%;
+  height: 100%;
+ }
+ 
+ .container {
+  background: url("http://m.qpic.cn/psc?/V10D6Scs0guTsf/45NBuzDIW489QBoVep5mcQRWoJMQ6tEJBQaxmMFBKxFeEjtF.ls56yTmaxS09AN3x2UJL4J4PIqWGW8LosCGwXwZemrryvTlwisCg4VCGaM!/b&bo=uAEOA7gBDgMBFzA!&rf=viewer_4");
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ 
+ .avs {
+  margin: 0 auto;  
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 200rpx;
+  height: 200rpx;
+  margin: 20rpx;
+  margin-top: 160rpx;/*修改顶部距离（头像-顶部）*/
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .username {
+  font-size: 40rpx;
+  font-weight: bold;
+  margin-top: 200rpx;
+  color:#fff;
+ }
+ 
+ .moto-container {
+  line-height: normal;
+  border: 1px solid #000056;
+  width: 200rpx;
+  height: 80rpx;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 200rpx;
+  padding: 0px;
+  outline: none;
+ }
+ 
+ .moto {
+  font-size: 32rpx;
+  font-weight: bold;
+  line-height: 80rpx;
+  text-align: center;
+  color: #000056;
+ }
