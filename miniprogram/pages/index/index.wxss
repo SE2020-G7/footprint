@@ -1,8 +1,243 @@
 page {
-  height:100%;
-  width: 100%;
-}
-.maMap{
   height: 100%;
   width: 100%;
 }
+.Map{
+  width:100%;
+  height:1310rpx;
+}
+
+.top {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 30rpx 20rpx;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.back {
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border-radius: 50%;
+  float: left;
+}
+.back image{
+  width: 80rpx;
+  height: 80rpx;
+  display: inline-block;
+}
+.search-box {
+  width: 610rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  background: #ffffff;
+  float: left;
+  overflow: hidden;
+}
+.search-box1 {
+  width: 610rpx;
+  border: 1px solid #ccc;
+  border-radius: 10rpx;
+  background: #eee;
+}
+.search-box input {
+  width: 380rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  color: #282828;
+  padding: 10rpx 20rpx;
+  box-sizing: border-box;
+  float: left;
+
+}
+.search-box-cover{
+  width: 610rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  background: #ededed;
+  margin-left:40rpx;
+  float: left;
+  overflow: hidden;
+}
+.search-box-cover .placeholder{
+  width: 600rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 17px;
+  color: #7f7f7f;
+  padding: 0 20rpx;
+  box-sizing: border-box
+}
+.add-list-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 998;
+  padding-top: 150rpx;
+  background: #fff;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.add-list {
+  width: 100%;
+  height: 1000rpx;
+}
+.add-item {
+  line-height: 40rpx;
+  padding: 30rpx 50rpx;
+  text-align: left;
+  border-top: 1px solid #eee;
+}
+.add-item .title {
+  color: #282828;
+  font-size: 32rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.add-item .add {
+  color: #707070;
+  font-size: 24rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.locationBg{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  bottom: 135rpx;
+  position: fixed;
+  margin-left: 15rpx;
+}
+
+.location{
+  width: 40px;
+  height: 40px;
+  
+}
+.bottom{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 20rpx 20rpx;
+  z-index: 999;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius:20rpx;
+  display: flex;
+}
+.address{
+  width: 610rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 20rpx;
+  padding-left: 7px;
+  background:#ededed;
+  float: left;
+  overflow: hidden;
+  font-size: 17px;
+  color: #7f7f7f;
+}
+.gotoImage{
+  height: 65rpx;
+  width: 65rpx;
+  position: absolute;
+  right: 70rpx;
+  padding-top: 4px;
+}
+.showView{
+  height: 30px;
+  width: 30px;
+  position: fixed;
+  right: 10rpx;
+  top: 120rpx;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.showViewBg{
+  height: 30px;
+  width: 30px;
+  position: fixed;
+  right: 10rpx;
+  top: 120rpx;
+}
+.showHotel{
+  height: 30px;
+  width: 30px;
+  position: fixed;
+  right: 10rpx;
+  top: 200rpx;
+}
+.showHotelBg{
+  height: 30px;
+  width: 30px;
+  position: fixed;
+  right: 10rpx;
+  top: 200rpx;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.showEat{
+  height: 30px;
+  width: 30px;
+  position: fixed;
+  right: 10rpx;
+  top: 300rpx;
+}
+.showEatBg{
+  height: 30px;
+  width: 30px;
+  position: fixed;
+  right: 10rpx;
+  top: 300rpx;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.showCollect{
+  height: 30px;
+  width: 30px;
+  position: fixed;
+  right: 10rpx;
+  top: 400rpx;
+}
+.showCollectBg{
+  height: 30px;
+  width: 30px;
+  position: fixed;
+  right: 10rpx;
+  top: 400rpx;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.showRecord{
+  height: 30px;
+  width: 30px;
+  position: fixed;
+  right: 10rpx;
+  top: 500rpx;
+}
+.showRecordBg{
+  height: 30px;
+  width: 30px;
+  position: fixed;
+  right: 10rpx;
+  top: 500rpx;
+  border-radius: 50%;
+  background-color: #fff;
+}
+

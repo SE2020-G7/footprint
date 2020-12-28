@@ -1,0 +1,40 @@
+<!--miniprogram/pages/recordlistpage/recordlistpage.wxml-->
+<!--<text>这里是打卡列表</text>-->
+<view class="recordlistBgpic"><!--背景图片-->
+  <image class="background"></image>
+</view>
+<view class="recordlistUser">
+  <view class="usericon"><!--左：头像-->
+    <open-data type="userAvatarUrl" ></open-data>
+  </view>
+  <view class="username"><!--中：昵称-->
+    <view class="name"><open-data type="userNickName"></open-data></view>
+  </view>
+
+  <view class="userdata"><!--右：数据-->
+    <view class="data">{{recordcount}}</view><!--数据-->
+    <view><!--"打卡"文本-->
+      <text class="text">打卡</text>
+    </view>
+  </view>
+</view>
+<view class="container"><!--打卡列表-->
+  <block wx:for-items="{{recordlist}}" wx:key="_id">
+    <view class="card" bindtap='gotoRecordInfo' data-_id="{{item._id}}">
+      <view class="card-head"><!--头部：地址-->
+        <view class="title">
+          <text class="address">{{item.address}}</text>
+        </view>
+      </view>
+      <view class="card-boby" wx:if="{{item.image.length==0}}"><!--主体：图片 -->
+        <image src="../../images/noimage.png" mode="widthFix"></image>
+      </view>
+      <view class="card-boby" wx:else>
+        <image src="{{item.image[0]}}" mode="widthFix"></image>
+      </view>
+      <view class="card-foot"><!--下部：日期-->
+        <text>{{item.time}}</text>
+      </view>
+    </view>
+  </block>
+</view>

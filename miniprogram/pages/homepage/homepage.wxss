@@ -1,1 +1,152 @@
 /* pages/homepage/homepage.wxss */
+page{/*页面背景——浅灰*/
+  background-color: #ededed;
+}
+.userInformation {/*头像昵称模块*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+}
+.userInfomation-avatar {/*头像*/ 
+  background-color: #ffffff;
+  margin: 0 auto;  
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 160rpx;
+  height: 160rpx;
+  margin: 20rpx;
+  margin-top: 30rpx;/*修改顶部距离（头像-顶部）*/
+  border-color: #ffffff;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.userInformation-nickname {/*昵称*/
+  color: #000000;
+  font-size: 40rpx;
+  text-align: center;
+  /*line-height: 200rpx;*/
+  background-color: white;
+}
+
+.whiteDivide {/*白色分割条（分隔昵称和相关数据）*/
+  height: 20px;
+  background-color: #ffffff;
+  position:relative;
+  top: 0px;
+}
+
+.userHistoricalData {/*用户数据模块*/
+  background-color: #ffffff;
+  position:relative;
+  /*top:15px;距离上面的模块的距离*/
+  justify-content: center;
+  display: flex;
+  height: 60px;/*可以调整数据和灰色横条之间的间隔*/
+}
+
+.dataNavigator {/*链接范围*/
+  height: 40px;
+}
+
+.userHistoricalRecord {/*打卡数据模块*/
+  background-color: #ffffff;
+  width: 40px;
+  height: 30px;
+  margin-right: 30px;
+}
+
+.userHistoricalCollect {/*收藏数据模块*/
+  background-color: #ffffff;
+  width: 40px;
+  height: 30px;
+  margin-left: 30px;
+}
+
+.userData {/*数据数字*/
+  color: #000000;
+  font-size: 15px;
+  text-align: center;
+}
+
+.userDataName {/*数据文本*/
+  color: #000000;
+  font-size: 15px;
+  width: 60px;
+  align-items: center;
+  /*text-align: center;*/
+  margin: 5px;
+}
+
+.grayDivide {/*灰色分割条*/
+  height: 10px;
+  background-color: #ededed;
+  position:relative;
+  top: 0px;
+}
+
+.whiteDivideline {/*白色分割线*/
+  height: 1px;
+  background-color: #ffffff;
+  width: 56px;
+  position:relative;
+  top: 0px;
+}
+
+.userFunctionInformation {/*左边图标+文字说明*/
+  display: flex;
+}
+.userFunctionIconLeft {/*左边图标模块*/
+  display: flex;
+  margin: 14px;
+}
+.userFunctionIconRight {/*右边图标模块*/
+  display: flex;
+  margin: 14px;
+  position: absolute;
+  right: 14px;
+}
+.userFunctionIconPicture {/*图标图片*/
+  display: flex;
+  width: 28px;
+  height: 28px;
+}
+.userFunctionText {/*左边文字*/
+  font-size: 17px;
+  font-style: normal;
+  font-weight: normal;
+  width: 68px;
+  position: relative;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;/*上下*/
+  /*align-items: left;左右*/
+  color: #000000;
+}
+
+
+.userFunction {/*模块*/
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 0rpx;
+  overflow: hidden;
+  display: flex;/**/
+}
+.allButton {/*按钮*/
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  height: 56px;/**/
+  display: flex;/**/
+  /*font-size: 17px;inherit*/
+}
+.allButton::after {
+  border: #ffffff solid;
+}
+
+
+

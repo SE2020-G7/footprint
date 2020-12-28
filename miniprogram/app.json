@@ -1,8 +1,26 @@
 {
   "pages": [
-    "pages/login/login",
     "pages/index/index",
-    "pages/homepage/homepage"
+    "pages/login/login",
+    "pages/homepage/homepage",
+    "pages/instructionspage/instructionspage",
+    "pages/draftboxpage/draftboxpage",
+    "pages/skincolorpage/skincolorpage",
+    "pages/recordlistpage/recordlistpage",
+    "pages/collectlistpage/collectlistpage",
+    "pages/question_1/question_1",
+    "pages/question_2/question_2",
+    "pages/question_3/question_3",
+    "pages/question_4/question_4",
+    "pages/question_5/question_5",
+    "pages/question_6/question_6",
+    "pages/question_7/question_7",
+    "pages/recordinformation/recordinformation",
+    "pages/gotorecord/gotorecord",
+    "pages/collectinformation/collectinformation",
+    "pages/editpage/editpage"
+
+
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -30,5 +48,11 @@
     ]
   },
   "style": "v2",
-  "sitemapLocation": "sitemap75.json"
+  "sitemapLocation": "sitemap75.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于个人旅行位置的打卡" 
+    }
+  }
+
 }

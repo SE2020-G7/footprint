@@ -1,0 +1,29 @@
+<!--miniprogram/pages/question_7/question_7.wxml
+<text>miniprogram/pages/question_7/question_7.wxml</text>-->
+<view class="titleModule"><!--问题标题-->
+  <text class="title">小程序如何授权定位？</text>
+</view>
+<view class="textModul"><!--问题解答-->
+  <text class="text">请检查定位是否开启；或授权小程序定位；若依旧未能解决问题，请点击页面底部“联系客服”进行意见反馈。</text>
+
+  <view><!--图文解释-->
+    <text class="text">解决方法如下：</text>
+    <text class="text">打开右上角“更多”按钮</text>
+    <image mode="widthFix" src="http://m.qpic.cn/psc?/V54au59j3fpkzz3KIMzV3ivNbu1pxpr3/ruAMsa53pVQWN7FLK88i5inWWcKc.vUEda9ebzYhQuMqeA87BIydtUOFpY7Na0zf6srALrLc6lX*COyXGn5SfVUACnBV5XKfr94hsybA5rE!/b&bo=aAMqAQAAAAADB2I!&rf=viewer_4"></image>
+
+    <text class="text">点击“设置”</text>
+    <image mode="widthFix" src="http://m.qpic.cn/psc?/V54au59j3fpkzz3KIMzV3ivNbu1pxpr3/ruAMsa53pVQWN7FLK88i5inWWcKc.vUEda9ebzYhQuPWj2ozjUBDpNjsR7td2BGd.ueCyFr1lDLrVPzs07xVfUm1X8LdFxxArtXZ0LL.02M!/b&bo=bgPtAgAAAAADB6A!&rf=viewer_4"></image>
+
+    <text class="text">点击“位置信息”</text>
+    <image mode="widthFix" src="http://m.qpic.cn/psc?/V54au59j3fpkzz3KIMzV3ivNbu1pxpr3/ruAMsa53pVQWN7FLK88i5kXWWTcW*xgE9CX3cuLGLlVG2o5fE5RAqiIU8o4NWJmZhpzZah8exzwT5*PdefLA5noY3h.oI7QaPFJSb*Rk*rQ!/b&bo=cQPmAQAAAAADB7c!&rf=viewer_4"></image>
+
+    <text class="text">开启小程序定位</text>
+    <image mode="widthFix" src="http://m.qpic.cn/psc?/V54au59j3fpkzz3KIMzV3ivNbu1pxpr3/ruAMsa53pVQWN7FLK88i5kXWWTcW*xgE9CX3cuLGLlVJNRDFtpxZArOTMKipwfU00eejAKtLvjXPjCgt6FZrR0eXkdRyFFCjGLpUeIt6lM4!/b&bo=bAPUAQAAAAADB5g!&rf=viewer_4"></image>
+    
+    <!--<view class="bottomContact">-->
+    <button open-type="contact" class="contactText">联系客服</button>
+    <!--</view>-->
+  </view>
+</view>
+
+<!--底部联系客服-->

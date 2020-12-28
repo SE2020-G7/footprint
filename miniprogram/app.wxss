@@ -1,0 +1,100 @@
+/* app.wxss主题颜色 */
+/* 藏蓝 */
+#normal-skin{
+  background: #000056;
+}
+#normal-skin .bColor{
+  background: #000056;
+  color: #ffffff;
+}
+#normal-skin .borderColor{
+  border-color:#ffffff;
+}
+/* 粉红 */
+#red-skin{
+  background: #f9e5ee;
+}
+#red-skin .bColor{
+  background: #f9e5ee;
+  color: #000000;
+}
+#red-skin .borderColor{
+  border-color:#000000;
+}
+/* 橘黄 */
+#yellow-skin{
+  background: #f6e1c9;
+}
+#yellow-skin .bColor{
+  background: #f6e1c9;
+  color: #000000;
+}
+#yellow-skin .borderColor{
+  border-color:#000000;
+}
+/* 天蓝 */
+#blue-skin{
+  background: #a2e9ff;
+}
+#blue-skin .bColor{
+  background: #a2e9ff;
+  color: #000000;
+}
+#blue-skin .borderColor{
+  border-color:#000000;
+}
+/* 草绿 */
+#green-skin{
+  background: #c0ffa7;
+}
+#green-skin .bColor{
+  background: #c0ffa7;
+  color: #000000;
+}
+#green-skin .borderColor{
+  border-color:#000000;
+}
+/* 淡紫 */
+#purple-skin{
+  background: #e7bcff;
+}
+#purple-skin .bColor{
+  background: #e7bcff;
+  color: #000000;
+}
+#purple-skin .borderColor{
+  border-color:#000000;
+}
+/* 黑色 */
+#purple-skin{
+  background: #353b41;
+}
+#purple-skin .bColor{
+  background: #353b41;
+  color: #fff;
+}
+#purple-skin .borderColor{
+  border-color:#fff;
+}
+/* 白色 */
+#purple-skin{
+  background: #fff;
+}
+#purple-skin .bColor{
+  background: #fff;
+  color: #000000;
+}
+#purple-skin .borderColor{
+  border-color:#000000;
+}
+/* 灰色 */
+#purple-skin{
+  background: #ededed;
+}
+#purple-skin .bColor{
+  background: #ededed;
+  color: #000000;
+}
+#purple-skin .borderColor{
+  border-color:#000000;
+}

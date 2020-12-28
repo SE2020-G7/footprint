@@ -1,0 +1,72 @@
+/* miniprogram/pages/collectlistpage/collectlistpage.wxss */
+.table  {/*table选项区域*/
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 5px 0;
+  color: #7f7f7f;
+  font-size: 17px;
+}
+.topTableSwiper {/*选项灰背景*/
+  /*border-top: 1px solid rgb(179, 167, 60);
+  border-bottom: 1px solid rgb(185, 73, 180);*/
+  background-color: #ededed;
+  zoom: 1;
+}
+.topTableSwiper:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.tableBorer {/*选中分类属性*/
+  border-bottom: 3px solid #000056;
+  color: #000000;
+  font-weight: bold;
+  font-size: 17px;
+}
+.swiper {/*选中分类下方列表*/
+  width: 100%;
+  background-color: #ffffff;
+  height: auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  /*min-height: 100vh;*/
+}
+.card {
+  width: 710rpx;
+  border-radius: 20rpx;
+  text-align: center;/*水平居中*/
+  margin: 20rpx 0;
+}
+.card-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+.title {
+  background-color: #ffffff;
+  width: 100%;
+  font-style: normal;
+  height: 35px;
+  line-height: 35px;
+}
+.address {
+  font-size: 30rpx;
+  color: #000;
+  font-size: 17px;
+  margin: 0 10rpx;
+}
+
+.card-body image {
+  height: 220px;
+}
+.card-foot {
+  font-size: 35rpx;
+  text-align: right;
+  margin-right: 30px;
+}

@@ -1,0 +1,104 @@
+/* miniprogram/pages/recordlistpage/recordlistpage.wxss */
+.recordlistBgpic {
+  width: 100%;
+  display: flex;
+}
+.background {
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+  /*background-size:100% 100%;*/
+  z-index: -1;/*图片置于底层*/
+  background: url("http://m.qpic.cn/psc?/V54au59j3fpkzz3KIMzV3ivNbu1pxpr3/ruAMsa53pVQWN7FLK88i5nv1puEj7.Zk66dz*ZXP1qaJtlUTpNXcFzwNcg*e7xqzIXQf*y8XSdJLF56HcMDI34UMawDTNbbb9Dd.3m.EuDc!/b&bo=uAEOAwAAAAABB5Q!&rf=viewer_4");
+}
+
+.recordlistUser {/*上方显示信息模块*/
+  margin-top: 160rpx;
+  display: flex;
+  /*margin-bottom: 10px;
+  background-color: #f1e5ae;*/
+}
+.usericon {/*左：头像*/
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 160rpx;
+  height: 160rpx;
+  margin: 20px;
+  /*margin-top: 30rpx;修改顶部距离（头像-顶部）*/
+  border-radius: 50%;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+.username {/*中：昵称*/
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+  width: 320rpx;
+  height: 120px;
+  line-height: 120px;/*设置高度，文字自己居中*/
+}
+
+.userdata {/*数据模块*/
+  height: 40px;
+  margin-top: 37px;
+  /*background-color: #f0d76b;*/
+}
+.data {/*数据*/
+  font-size: 17px;
+  color: #ffffff;
+  text-align: center;
+}
+.text {/*“打卡”这两个字*/
+  font-size: 17px;
+  color: #ffffff;
+  text-align: center;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+.card {
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+.card-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;/*水平居中*/
+}
+.title {
+  background-color: #ffffff;
+  width: 100%;
+  font-style: normal;
+  height: 35px;
+  line-height: 35px;
+}
+.address {
+  font-size: 30rpx;
+  color: #000;
+  font-size: 17px;
+  margin: 0 10rpx;
+}
+.card-body {
+  display: flex;
+  justify-content: center;
+}
+.card-body image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.card-foot {
+  font-size: 35rpx;
+  text-align: right;
+  /*margin-right: 30px;*/
+  position: relative;
+  right: 50px;
+}

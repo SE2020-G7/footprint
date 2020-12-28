@@ -26,11 +26,14 @@
       "disablePlugins": [],
       "outputPath": ""
     },
+    "bundle": false,
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
-    "packNpmRelationList": []
+    "packNpmRelationList": [],
+    "minifyWXSS": true
   },
   "appid": "wx7c32bbd2a9d66b76",
   "projectname": "test",
@@ -38,29 +41,54 @@
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+  "compileType": "miniprogram",
   "condition": {
-    "search": {
-      "current": -1,
-      "list": []
-    },
-    "conversation": {
-      "current": -1,
-      "list": []
-    },
     "plugin": {
-      "current": -1,
       "list": []
     },
     "game": {
       "list": []
     },
+    "gamePlugin": {
+      "list": []
+    },
     "miniprogram": {
-      "current": 0,
       "list": [
         {
           "id": -1,
           "name": "db guide",
-          "pathName": "pages/databaseGuide/databaseGuide"
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/collectinformation/collectinformation",
+          "pathName": "pages/collectinformation/collectinformation",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/test/test",
+          "pathName": "pages/test/test",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/homepage/homepage",
+          "pathName": "pages/homepage/homepage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/recordlistpage/recordlistpage",
+          "pathName": "pages/recordlistpage/recordlistpage",
+          "query": "",
+          "scene": null
         }
       ]
     }

@@ -1,1 +1,82 @@
-<map id="myMap" class="maMap" latitude="{{latitude}}" longitude="{{longitude}}" subkey="453BZ-2JRCS-TM7OY-6TUVN-2XL2T-I3FFG" layer-style="1"/>
+<!--搜索框-->
+<view wx:if="{{addListShow}}">
+  <!--输入内容框-->
+  <view class="top">
+    <view class="back" bindtap="back1">
+      <image src="../../images/all_back.png"></image>
+    </view>
+    <view class="search-box {{addListShow?'search-box1':''}}">
+      <input bindinput="getsuggest" placeholder="来找找好地方吧！"></input>
+    </view>
+  </view>
+  <view class="add-list-box">
+    <scroll-view class="add-list" scroll-y>
+      <view class="add-item" wx:for="{{suggestion}}" wx:key="index">
+        <!--绑定回填事件-->
+        <view bindtap="backfill" id="{{index}}" data-name="{{item.title}}">
+          <!--根据需求渲染相应数据-->
+          <!--渲染地址title-->
+          <view class="title">{{item.title}}</view>
+          <!--渲染详细地址-->
+          <view class="add">{{item.addr}}</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+
+<!--显示地图-->
+
+<view wx:if="{{!addListShow}}">
+  <map 
+  id="myMap" 
+  class="Map"
+  longitude="{{longitude}}"
+  latitude="{{latitude}}"
+  scale="{{scale}}"
+  markers="{{markers}}"
+  bindregionchange="bindregionchange"
+  bindmarkertap="showDetial"
+  subkey="453BZ-2JRCS-TM7OY-6TUVN-2XL2T-I3FFG">
+  
+    <!--搜索框-->
+    <cover-view class="top">
+      <cover-view class="search-box-cover">
+        <cover-view class="placeholder" bindtap="showAddList">来找找好地方吧！</cover-view>
+      </cover-view>
+    </cover-view>
+  
+    <!--景点推荐-->
+    <cover-view class="showViewBg" wx:if="{{clickView==false}}">
+      <cover-image bindtap="showView" class="showView" src="../../images/map_recommend_view_blank.png"></cover-image>
+    </cover-view>
+    <cover-view class="showViewBg" wx:else>
+      <cover-image bindtap="hideView" class="showView" src="../../images/map_recommend_view_click.png"></cover-image>
+    </cover-view>
+
+    <!--酒店推荐-->
+    <cover-view class="showHotelBg" wx:if="{{clickHotel==false}}">
+      <cover-image bindtap="showHotel" class="showHotel" src="../../images/map_recommend_hotel_blank.png"></cover-image>
+    </cover-view>
+    <cover-view class="showHotelBg" wx:else>
+      <cover-image  bindtap="hideHotel" class="showHotel" src="../../images/map_recommend_hotel_click.png"></cover-image>
+    </cover-view>
+    <!--餐饮推荐-->
+    <cover-view class="showEatBg" wx:if="{{clickEat==false}}">
+      <cover-image bindtap="showEat" class="showEat" src="../../images/map_recommend_eat_blank.png"></cover-image>
+    </cover-view>
+    <cover-view class="showEatBg" wx:else>
+      <cover-image bindtap="hideEat" class="showEat" src="../../images/map_recommend_eat_click.png"></cover-image>
+    </cover-view>
+
+    <!--返回当前位置-->
+    <cover-view class=" locationBg">
+      <cover-image bindtap='tapM' class="location" src="../../images/index_nowlocation.png"></cover-image>
+    </cover-view>
+    <!--底部显示icon所指位置-->
+    <cover-view class="bottom">
+      <cover-view class="address">{{address}}</cover-view>
+      <cover-image class="gotoImage" src="../../images/map_add_blank.png" bindtap="gotoNewRecord"></cover-image>
+    </cover-view>
+  </map>
+</view>

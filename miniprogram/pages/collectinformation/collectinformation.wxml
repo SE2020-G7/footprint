@@ -1,0 +1,65 @@
+<!--miniprogram/pages/collectinformation/collectinformation.wxml
+<text>miniprogram/pages/collectinformation/collectinformation.wxml</text>-->
+<view class="card"><!--店铺信息图片-->
+  <image src="{{image}}" mode="widthFix"></image>
+</view>
+<view class='addressTitle'><!--地址信息-->
+  <view class="addressInfo"><!--左边地址信息-->
+    <view class="addressInfoText" style="white-space: pre-line;line-weight:120%">{{addressTitle}}</view><!--地址-->
+  </view>
+  <view class=""><!--右边地址信息-->
+    <view><!--收藏图标-->
+      <view class="collectIcon" wx:if="{{collect==false}}">
+        <image bindtap="isCollect" src="../../images/recordinformation_collect_blank.png"></image>
+      </view>
+      <view class="collectIcon" wx:else>
+        <image bindtap="isnotCollect" src="../../images/recordinformation_collect_click.png"></image>
+      </view>
+    </view>
+    <view class="score" wx:if="{{addressScore>0}}"><!--右边：评分-->
+      <text>评分：{{addressScore}}</text>
+    </view>
+  </view>
+</view>
+<view class="addressInfoTitle">{{addressInfo}}</view><!--地址详情-->
+
+<view class="textModul"><!--文本框-->
+  <view class="text"><!--文本框-->
+    <text>{{text}}</text>
+  </view>
+</view>
+<view class='sharerecord'><!--属性-->
+  <button open-type="share" class="shareIcon"><!--右边1：分享：有问题！！！！button长度改变失败-->
+    <image src="/images/recordinformation_share.png"></image>
+  </button>
+  <view class="goRecord" bindtap="gotoNewRecord"><!--右边2：去打卡-->
+    <view class="recordIcon">
+      <image src="/images/recordinformation_gotorecord.png"></image>
+    </view>
+    <text class="recordwarn">去打卡</text>
+  </view>
+</view>
+<view class="newRecord"><!--最新打卡灰横栏-->
+  <text>最新打卡</text>
+</view>
+<!--间隔灰横条
+<view class="grayDivide"></view>-->
+<view class="userRecord" wx:for-items="{{record}}" wx:key="_id">
+  <view class="userInfo"><!--用户头像和昵称-->
+    <view class="userAvatar"><!--用户头像-->
+      <image src="{{item.userData.avatarUrl}}"></image>
+    </view>
+    <view class="userNickname"><!--用户名称-->
+      <text>{{item.userData.nickName}}</text>
+    </view>
+    <view class="userRecordDate"><!--打卡时间-->
+      <text>{{item.time}}</text>
+    </view>
+  </view>
+  <view class="userText"wx:if="{{item.content.length>0}}"><!--用户打卡文字记录-->
+    <text>{{item.content}}</text>
+  </view>
+  <view class="userImage" wx:if="{{item.image.length>0}}"><!--用户打卡图片记录-->
+    <image src="{{item.image[0]}}" mode="widthFix"></image>
+  </view>
+</view>

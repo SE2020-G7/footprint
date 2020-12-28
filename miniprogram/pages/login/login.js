@@ -40,10 +40,8 @@ Page({
               console.log("未注册")
               _this.register({
                 nickName: e.detail.userInfo.nickName,
-                gender: e.detail.userInfo.gender,
                 avatarUrl: e.detail.userInfo.avatarUrl,
-                region: ['none', 'none', 'none'],
-                campus: "none",
+                state:0,
                 record_num:0,
                 collect_num:0,
               })
@@ -72,7 +70,7 @@ Page({
       name: 'get_setUserInfo',
       data: {
         setSelf: true,
-        userData: e
+        userData: e,
       },
       success: res => {
         console.log(res)
@@ -84,7 +82,7 @@ Page({
           app.globalData.userId = res.result._id
           _this.data.registered = true
           console.log(res)
-          wx.navigateTo({
+          wx.switchTab({
             url: '/pages/index/index'
           })
         } else {

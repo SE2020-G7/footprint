@@ -1,2 +1,94 @@
 <!--pages/homepage/homepage.wxml-->
-<text>pages/homepage/homepage.wxml</text>
+<!--<text>pages/homepage/homepage.wxml</text>-->
+<!--用户头像和昵称-->
+<view class="userInformation">
+  <view class="userInfomation-avatar">
+    <open-data type="userAvatarUrl" ></open-data>
+  </view>
+  <view class="userInformation-nickname">
+    <open-data type="userNickName"></open-data>
+  </view>  
+</view>
+<!--间隔白横条-->
+<view class="whiteDivide"></view>
+<!--用户数据-->
+<view class="userHistoricalData">
+  <!--用户打卡数据模块-->
+  <view bindtap="gotoRecordlist" class="dataNavigator">
+    <view class="userHistoricalRecord">
+      <view class="userData">{{recordcount}}</view><!--用户打卡数据-->
+      <view class="userDataName">打卡</view><!--用户打卡文字-->
+    </view>
+  </view>
+  <!--用户收藏数据模块-->
+  <view bindtap="gotoColletlist" hover-class="none" class="dataNavigator">
+    <view class="userHistoricalCollect">
+      <view class="userData">{{collectcount}}</view><!--用户收藏数据-->
+      <view class="userDataName">想去</view><!--用户收藏文字-->
+    </view>
+  </view>
+</view>
+<!--间隔灰横条-->
+<view class="grayDivide"></view>
+<!--草稿箱-->
+<view class='userFunction'>
+  <view bindtap="gotoDraftbox"class='allButton' style="width:100%">
+    <view class="userFunctionInformation"><!--左边图片+文字-->
+      <view class="userFunctionIconLeft"><!--图片-->
+        <image class="userFunctionIconPicture" src="/images/homepage_draftbox.png"></image>
+      </view>
+      <view class="userFunctionText"><!--文字-->草稿箱</view>
+    </view>
+    <view class="userFunctionIconRight"><!--图片-->
+      <image class="userFunctionIconPicture" src="/images/question_gointo.png"></image>
+    </view>
+  </view>
+</view>
+<!--间隔灰横条-->
+<view class="grayDivide"></view>
+<!--一键换肤-->
+<view class='userFunction'>
+  <navigator url="../skincolorpage/skincolorpage" class='allButton' style="width:100%">
+    <view class="userFunctionInformation"><!--左边图片+文字-->
+      <view class="userFunctionIconLeft"><!--图片-->
+        <image class="userFunctionIconPicture" src="/images/homepage_skincolor.png"></image>
+      </view>
+      <view class="userFunctionText"><!--文字-->一键换肤</view>
+    </view>
+    <view class="userFunctionIconRight"><!--图片-->
+      <image class="userFunctionIconPicture" src="/images/question_gointo.png"></image>
+    </view>
+  </navigator>
+</view>
+<!--间隔灰横条-->
+<view class="grayDivide"></view>
+<!--联系我们-->
+<view class='userFunction'>
+  <button open-type="contact" class='allButton' style="width:100%">
+    <view class="userFunctionInformation"><!--左边图片+文字-->
+      <view class="userFunctionIconLeft"><!--图片-->
+        <image class="userFunctionIconPicture" src="/images/homepage_contact.png"></image>
+      </view>
+      <view class="userFunctionText"><!--文字-->联系我们</view>
+    </view>
+    <view class="userFunctionIconRight"><!--图片-->
+      <image class="userFunctionIconPicture" src="/images/question_gointo.png"></image>
+    </view>
+  </button>
+</view>
+<!--间隔白横线-->
+<view class="whiteDivideline"></view>
+<!--使用说明-->
+<view class='userFunction'>
+  <navigator url="../instructionspage/instructionspage" class='allButton' style="width:100%">
+    <view class="userFunctionInformation"><!--左边图片+文字-->
+      <view class="userFunctionIconLeft"><!--图片-->
+        <image class="userFunctionIconPicture" src="/images/homepage_instructions.png"></image>
+      </view>
+      <view class="userFunctionText"><!--文字-->使用说明</view>
+    </view>
+    <view class="userFunctionIconRight"><!--图片-->
+      <image class="userFunctionIconPicture" src="/images/question_gointo.png"></image>
+    </view>
+  </navigator>
+</view>

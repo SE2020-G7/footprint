@@ -1,0 +1,56 @@
+/* miniprogram/pages/skincolorpage/skincolorpage.wxss */
+.content{
+  display: flex;
+  flex-direction: row;
+}
+.colorBox1 {
+  height:150px;
+  background-color:#000056;
+  margin: 5px;
+}
+.colorBox2 {
+  height:150px;
+  background-color:#f6e1c9;
+  margin: 5px;
+}
+.colorBox3 {
+  height:150px;
+  background-color:#f9e5ee;
+  margin: 5px;
+}
+.colorBox4 {
+  height:150px;
+  background-color:#a2e9ff;
+  margin: 5px;
+}
+.colorBox5 {
+  height:150px;
+  background-color:#c0ffa7;
+  margin: 5px;
+}
+.colorBox6 {
+  height:150px;
+  background-color:#e7bcff;
+  margin: 5px;
+}
+.colorBox7 {
+  height:150px;
+  background-color:#353b41;
+  margin: 5px;
+}
+.colorBox8 {
+  height:150px;
+  background-color:#ffffff;
+  margin: 5px;
+}
+.colorBox9 {
+  height:150px;
+  background-color:#ededed;
+  margin: 5px;
+}
+.colorText {
+  justify-content: center;
+  justify-items: center;
+  line-height: 40px;
+  margin: 5px;
+}

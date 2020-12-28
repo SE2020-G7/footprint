@@ -1,0 +1,23 @@
+<!--miniprogram/pages/draftboxpage/draftboxpage.wxml-->
+<view class="title">草稿箱</view>
+<view class="grayDivideline"></view>
+<view class="container"><!--草稿列表-->
+  <block wx:for="{{draftboxlist}}" wx:key="_id">
+    <view class="card" bindtap='gotoEdit' data-_id="{{item._id}}">
+      <view class="card-head"><!--头部：地址-->
+        <view class="title">
+          <text class="address">{{item.address}}</text>
+        </view>
+      </view>
+      <view class="card-boby" wx:if="{{item.image.length==0}}"><!--主体：图片-->
+        <image src="../../images/noimage.png" mode="widthFix"></image>
+      </view>
+      <view class="card-boby" wx:else><!--主体：图片-->
+        <image src="{{item.image[0]}}" mode="widthFix"></image>
+      </view>
+      <view class="card-foot"><!--下部：日期-->
+        <text>{{item.time}}</text>
+      </view>
+    </view>
+  </block>
+</view>

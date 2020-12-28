@@ -1,0 +1,86 @@
+
+<view class="title">新建打卡</view>
+<view class="grayDivideline"></view>
+<form>
+<!--test浏览图片-->
+<view class="weui-cell">
+  <view class="weui-cell__bd">
+    <view class="weui-uploader">
+      <view class="weui-uploader__hd">
+        <view class="weui-uploader__title">点击预览图片</view>
+        <view class="weui-uploader__info">已上传：{{imageList.length}}</view>
+      </view>
+      <view class="weui-uploader__bd">
+        <view class="weui-uploader__files">
+          <block wx:for="{{imageList}}" wx:for-item="image">
+            <view class="weui-uploader__file">
+              <image class="weui-uploader__img" src="{{image}}" data-src="{{image}}" bindtap="previewImage"></image>
+            </view>
+          </block>
+        </view>
+        <view class="weui-uploader__input-box">
+          <view class="weui-uploader__input" bindtap="chooseImage"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!--test浏览图片-->
+<!--间隔灰横线-->
+<view class="grayDivideline"></view>
+
+  <view class='selectAddress'><!--选择地址栏-->
+    <view class='addressBackground' style="width:100%">
+      <view class="addressLeft"><!--左边图片+文字-->
+        <view class="addressIconLeft"><!--图片-->
+          <image class="addressPicture" src="/images/map_blank.png"></image>
+        </view>
+        <view class="addressText"><!--文字-->打卡位置：{{address}}</view>
+      </view>
+    </view>
+  </view>
+  <!--间隔灰横线-->
+  <view class="grayDivideline"></view>
+  <view class="textModul"><!--输入框-->
+    <view class="textText"><!--输入文本框-->
+      <input class="inputText" bindinput="getContent" placeholder="在这里说点什么吧~~" />
+    </view>
+  </view>
+  <!--选择打卡属性-->
+  <view class='selectOther'>
+    <view class='addressBackground' style="width:100%">
+      <view class="addressLeft"><!--左边标签-->
+        <view class="addressIconLeft"><!--标签图标-->
+          <image class="addressPicture" src="/images/write_tags.png"></image>
+        </view>
+        <view class="addressIconLeft"><!--标签选择-->
+          <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class="pickerText">
+            <view class="picker">{{array[index]}}</view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <!--图片：可见性-->
+    <view class="addressRight2" wx:if="{{clickRecord==true}}"><!--图片：可见性-->      
+      <image bindtap="hideRecord" class="addressPicture" src="../../images/write_eyes.png"></image>
+    </view>
+    <view class="addressRight2" wx:else><!--图片：可见性-->
+      <image bindtap="showRecord" class="addressPicture" src="../../images/closeeye.png"></image>
+    </view>
+    <!--图片：草稿箱-->
+    <view>
+      <view class="addressRight"><!--图片：草稿箱-->
+        <image bindtap="isDraftbox" value="{{state}}" class="addressPicture" src="/images/homepage_draftbox.png"></image>
+      </view>
+    </view>
+  </view>
+  <!--发布按钮-->
+  <view class='buttonModul'>
+    <button class='submitButton' bindtap='submit' style="width:100%">
+      <view class="textcenter"><!--文字-->
+        <view class="submitText"><!--文字-->发布</view>
+      </view>
+    </button>
+  </view>
+</form>
+

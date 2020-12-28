@@ -1,0 +1,44 @@
+<!--miniprogram/pages/skincolorpage/skincolorpage.wxml
+<text>这里是一键换肤</text>-->
+<view class="content">
+  <view style="flex:1;height:200px;">
+    <view class="colorBox1" bindtap="setSkin" data-flag='normal'></view>
+    <view class="colorText" bindtap="setSkin" data-flag='normal'>藏蓝</view>
+  </view>
+  <view style="flex:1;height:200px;">
+    <view class="colorBox2" bindtap="setSkin" data-flag='yellow'></view>
+    <view class="colorText" bindtap="setSkin" data-flag='yellow'>橘黄</view>
+  </view>
+  <view style="flex:1;height:200px;">
+    <view class="colorBox3" bindtap="setSkin" data-flag='red'></view>
+    <view class="colorText" bindtap="setSkin" data-flag='red'>粉红</view>
+  </view>
+</view>
+<view class="content">
+  <view style="flex:1;height:200px;">
+    <view class="colorBox4" bindtap="setSkin" data-flag='blue'></view>
+    <view class="colorText" bindtap="setSkin" data-flag='blue'>天蓝</view>
+  </view>
+  <view style="flex:1;height:200px;">
+    <view class="colorBox5" bindtap="setSkin" data-flag='green'></view>
+    <view class="colorText" bindtap="setSkin" data-flag='green'>草绿</view>
+  </view>
+  <view style="flex:1;height:200px;">
+    <view class="colorBox6" bindtap="setSkin" data-flag='purple'></view>
+    <view class="colorText" bindtap="setSkin" data-flag='purple'>淡紫</view>
+  </view>
+</view>
+<view class="content">
+  <view style="flex:1;height:200px;">
+    <view class="colorBox7" bindtap="setSkin" data-flag='black'></view>
+    <view class="colorText" bindtap="setSkin" data-flag='black'>黑色</view>
+  </view>
+  <view style="flex:1;height:200px;">
+    <view class="colorBox8" bindtap="setSkin" data-flag='white'></view>
+    <view class="colorText" bindtap="setSkin" data-flag='white'>白色</view>
+  </view>
+  <view style="flex:1;height:200px;">
+    <view class="colorBox9" bindtap="setSkin" data-flag='grey'></view>
+    <view class="colorText" bindtap="setSkin" data-flag='grey'>灰色</view>
+  </view>
+</view>

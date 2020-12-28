@@ -1,0 +1,61 @@
+<!--日期-->
+<view class="titleDate">
+  <text>{{date}}</text>
+</view>
+<!--图片card-->
+<view class="card">
+  <scroll-view class="container">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{image}}" wx:key="image">
+        <swiper-item>
+          <image src="{{item}}" style="width: 100%;" class='swiperImg' mode="heightFix"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </scroll-view>
+</view>
+
+<view class='addressTitle'><!--地址横栏-->
+  <view class="addressPic"><!--地址图片-->
+    <image src="../../images/map_blank.png"></image>
+  </view>
+  <view class="addressText">{{address}}</view><!--地址-->
+</view>
+<view class="textModul"><!--文本框-->
+  <view class="text"><!--文本框-->
+    <text>{{text}}</text>
+  </view>
+</view>
+<view class='recordType' wx:key="visibility"><!--属性-->
+  <view data-visibility="{{item.visibility}}"><!--左边1：可见性-->
+    <view class="addressIconLeft" wx:if="{{visibility}}"><!--可见-->
+      <image src="../../images/write_eyes.png" class="addressPicture"></image>
+    </view>
+    <view class="addressIconLeft" wx:else><!--不可见-->
+      <image src="../../images/closeeye.png" class="addressPicture"></image>
+    </view>
+  </view>
+  <view><!--左边2：标签-->
+    <view class="addressIconLeft"><!--标签-->
+      <image class="addressPicture" src="/images/write_tags.png"></image><!--图标-->
+      <!--标签-->
+      <text wx:if="{{type==0}}">其他</text>
+      <text wx:elif="{{type==1}}">景点</text>
+      <text wx:elif="{{type==2}}">住宿</text>
+      <text wx:else>餐饮</text>
+    </view>
+  </view>
+  <button open-type="share" class="shareIcon" size="mini"><!--右边1：分享-->
+    <image src="/images/edit_share.png"></image>
+  </button>
+  <view  bindtap='editRecord'><!--右边2：编辑-->
+    <view class="addressRight2"><!--图片：编辑-->
+      <image class="addressPicture" src="/images/edit_edit.png"></image>
+    </view>
+  </view>
+  <view bindtap="delRecord"><!--右边3：删除-->
+    <view class="addressRight"><!--图片：删除-->
+      <image class="addressPicture" src="/images/edit_delete.png"></image>
+    </view>
+  </view>
+</view>

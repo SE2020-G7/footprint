@@ -1,0 +1,13 @@
+<!--miniprogram/pages/question_5/question_5.wxml-->
+<view class="titleModule"><!--问题标题-->
+  <text class="title">地图无法显示？</text>
+</view>
+<view class="textModul"><!--问题解答-->
+  <text class="text">请等待几秒，若还未显示，请关闭小程序重启；若依旧未能解决问题，请点击页面底部“联系客服”进行意见反馈。</text>
+  <image mode="widthFix" src="http://m.qpic.cn/psc?/V54au59j3fpkzz3KIMzV3ivNbu1pxpr3/ruAMsa53pVQWN7FLK88i5nv1puEj7.Zk66dz*ZXP1qbms3nA.F3En9BUfpnEo.5X9UVSELke*Wnfqm.l*Oz8Vj3TnsgL4fcUo6BaGrrNCw8!/b&bo=1QKYBAAAAAADB2k!&rf=viewer_4"></image>
+    <!--<view class="bottomContact">-->
+    <button open-type="contact" class="contactText">联系客服</button>
+    <!--</view>-->
+</view>
+
+<!--底部联系客服-->

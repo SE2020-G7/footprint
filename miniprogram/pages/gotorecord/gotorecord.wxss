@@ -1,0 +1,267 @@
+/* miniprogram/pages/gotorecord/gotorecord.wxss */
+.title {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 17px;
+  color: #000;
+  background-color: #fff;
+}
+.addImage {
+  background-color: #7f7f7f;
+  width: 100%;
+  height: 230px;
+  align-items: center;
+  display: flex;
+}
+.addButton {
+  background-color: #7f7f7f;
+}
+.Icon {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+.addImageIcon {
+  height: 50px;
+  width: 50px;
+  margin-top: 50px;
+}
+.addImageText {
+  color: #ededed;
+  font-size: 17px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  
+}
+
+.selectAddress {/*模块*/
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 0rpx;
+  overflow: hidden;
+  display: flex;/**/
+}
+.addressBackground {/*按钮*/
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  height: 56px;/**/
+  display: flex;/**/
+}
+
+.addressLeft {/*左边图标+文字说明*/
+  display: flex;
+}
+.addressIconLeft {/*左边图标模块*/
+  display: flex;
+  margin: 14px;
+}
+.addressPicture {/*图标图片*/
+  display: flex;
+  width: 28px;
+  height: 28px;
+}
+.addressText {/*左边文字*/
+  line-height: 56px;
+  border-radius: 20rpx;
+  background:#ffffff;
+  float: left;
+  overflow: hidden;
+  font-size: 17px;
+  color: #000000;
+  justify-content: center;
+}
+.addressRight {/*右边图标模块*/
+  display: flex;
+  margin: 14px;
+  position: absolute;
+  right: 5px;
+}
+.addressRight2 {/*右边图标模块2*/
+  display: flex;
+  margin: 14px;
+  position: absolute;
+  right: 47px;
+}
+.grayDivideline {/*白色分割线*/
+  height: 1px;
+  background-color: #ededed;
+  width: 100%;
+  position:relative;
+  top: 0px;
+}
+.picker {
+  font-size: 17px;
+  color: #000000;
+  position: relative;
+  left: -14px;
+}
+.pickerText {
+  font-size: 17px;
+}
+
+.textModul {/*输入框*/
+  background-color: #ffffff;
+  width: 100%;
+  height: 150px;
+  display: flex;
+}
+.textText {/*输入文本框*/
+  margin-right: 7px;
+  margin-left: 7px;
+  height: 100px;width: 100%;
+  margin-top: 5px;/*background-color: #5a98b1;*/
+}
+.inputText {
+  margin-right: 7px;
+  margin-left: 7px;/*background-color: #3a6e83;*/
+}
+/*.textCount {输入字数提示
+  position: relative;
+  right: 5px;
+  height: 20px;
+  bottom: 0px;background-color: #166280;
+}*/
+
+.selectOther {/*模块*/
+  width: 100%;
+  background-color: #ffffff;
+  overflow: hidden;
+  display: flex;/*margin-top: 0rpx;*/
+  position: absolute;
+  bottom: 56px;
+}
+
+
+.buttonModul {/*模块*/
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 0rpx;
+  overflow: hidden;
+  display: flex;/**/
+  position: fixed;
+  bottom: 0px;/*form表单的最底端*/
+}
+.submitButton {/*按钮*/
+  background-color: #000056;
+  padding: 0;
+  margin: 0;
+  /*width: 56px;
+  height: 56px;*/
+  display: flex;/*
+  position: relative;
+  bottom: 0px;*/
+  /*font-size: 17px;inherit*/
+}
+.submitButton::after {
+  border: #ffffff solid;
+}
+.textcenter {
+  text-align:center;
+  align-items:center;
+  justify-content: center;
+  margin: auto;
+}
+.submitText {/*左边文字*/
+  font-size: 17px;
+  font-style: normal;
+  font-weight: normal;
+  /*position: relative;左右*/
+  text-align: center;
+  align-items: center;
+  line-height: 56px;
+  color: #ffffff;
+}
+
+/*.lookImage {浏览
+  color: #ededed;
+  font-size: 17px;
+  position: relative;
+  right: 0;
+  top: 100px;
+}
+*/
+page {
+  line-height: 1.6;
+  font-family: -apple-system-font, "Helvetica Neue", sans-serif;
+}
+icon {
+  vertical-align: middle;
+}
+.weui-cell {
+  padding: 10px 15px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+.weui-cell_input {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.weui-uploader__hd {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding-bottom: 10px;
+  align-items: center;
+}
+.weui-uploader__title {
+  flex: 1;
+}
+.weui-uploader__info {
+  color: #b2b2b2;
+}
+.weui-uploader__bd {
+  margin-bottom: -4px;
+  margin-right: -9px;
+  overflow: hidden;
+}
+.weui-uploader__file {
+  float: left;
+  margin-right: 9px;
+  margin-bottom: 9px;
+}
+.weui-uploader__img {
+  display: block;
+  width: 79px;
+  height: 79px;
+}
+.weui-uploader__input-box {
+  float: left;
+  position: relative;
+  margin-right: 9px;
+  margin-bottom: 9px;
+  width: 77px;
+  height: 77px;
+  border: 1px solid #d9d9d9;
+}
+.weui-uploader__input-box:before, .weui-uploader__input-box:after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #d9d9d9;
+}
+.weui-uploader__input-box:before {
+  width: 2px;
+  height: 39.5px;
+}
+.weui-uploader__input-box:after {
+  width: 39.5px;
+  height: 2px;
+}
+.weui-uploader__input {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}

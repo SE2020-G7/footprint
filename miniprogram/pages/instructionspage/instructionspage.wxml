@@ -1,0 +1,119 @@
+<!--miniprogram/pages/instructionspage/instructionspage.wxml-->
+<view class="title"><!--标题-->
+  <text class="titleText">打卡相关</text>
+</view>
+<!--问题1-->
+<view class='userFunction'>
+  <navigator url="../question_1/question_1" class='allButton' style="width:100%">
+    <view class="userFunctionInformation"><!--左边图片+文字-->
+      <view class="userFunctionIconLeft"><!--图片-->
+        <image class="userFunctionIconPicture" src="/images/map_blank.png"></image>
+      </view>
+      <view class="userFunctionText"><!--文字-->定位不准确？</view>
+    </view>
+    <view class="userFunctionIconRight"><!--图片-->
+      <image class="userFunctionIconPicture" src="/images/question_gointo.png"></image>
+    </view>
+  </navigator>
+</view>
+<!--间隔白横线-->
+<view class="whiteDivideline"></view>
+<!--问题2-->
+<view class='userFunction'>
+  <navigator url="../question_2/question_2" class='allButton' style="width:100%">
+    <view class="userFunctionInformation"><!--左边图片+文字-->
+      <view class="userFunctionIconLeft"><!--图片-->
+        <image class="userFunctionIconPicture" src="/images/recordinformation_gotorecord.png"></image>
+      </view>
+      <view class="userFunctionText"><!--文字-->打卡发布出错？</view>
+    </view>
+    <view class="userFunctionIconRight"><!--图片-->
+      <image class="userFunctionIconPicture" src="/images/question_gointo.png"></image>
+    </view>
+  </navigator>
+</view>
+<!--间隔白横线-->
+<view class="whiteDivideline"></view>
+<!--问题3-->
+<view class='userFunction'>
+  <navigator url="../question_3/question_3" class='allButton' style="width:100%">
+    <view class="userFunctionInformation"><!--左边图片+文字-->
+      <view class="userFunctionIconLeft"><!--图片-->
+        <image class="userFunctionIconPicture" src="/images/write_write.png"></image>
+      </view>
+      <view class="userFunctionText"><!--文字-->无法编辑打卡？</view>
+    </view>
+    <view class="userFunctionIconRight"><!--图片-->
+      <image class="userFunctionIconPicture" src="/images/question_gointo.png"></image>
+    </view>
+  </navigator>
+</view>
+<!--间隔白横线-->
+<view class="whiteDivideline"></view>
+<!--问题7+-->
+<view class='userFunction'>
+  <navigator url="../question_7/question_7" class='allButton' style="width:100%">
+    <view class="userFunctionInformation"><!--左边图片+文字-->
+      <view class="userFunctionIconLeft"><!--图片-->
+        <image class="userFunctionIconPicture" src="/images/location_questionicon.png"></image>
+      </view>
+      <view class="userFunctionText"><!--文字-->小程序如何授权定位？</view>
+    </view>
+    <view class="userFunctionIconRight"><!--图片-->
+      <image class="userFunctionIconPicture" src="/images/question_gointo.png"></image>
+    </view>
+  </navigator>
+</view>
+<view class="title"><!--标题-->
+  <text class="titleText">推荐相关</text>
+</view>
+<!--问题4-->
+<view class='userFunction'>
+  <navigator url="../question_4/question_4" class='allButton' style="width:100%">
+    <view class="userFunctionInformation"><!--左边图片+文字-->
+      <view class="userFunctionIconLeft"><!--图片-->
+        <image class="userFunctionIconPicture" src="/images/question_icon.png"></image>
+      </view>
+      <view class="userFunctionText"><!--文字-->图标未在地图上显示？</view>
+    </view>
+    <view class="userFunctionIconRight"><!--图片-->
+      <image class="userFunctionIconPicture" src="/images/question_gointo.png"></image>
+    </view>
+  </navigator>
+</view>
+<!--间隔白横线-->
+<view class="whiteDivideline"></view>
+<!--问题5-->
+<view class='userFunction'>
+  <navigator url="../question_5/question_5" class='allButton' style="width:100%">
+    <view class="userFunctionInformation"><!--左边图片+文字-->
+      <view class="userFunctionIconLeft"><!--图片-->
+        <image class="userFunctionIconPicture" src="/images/map_questionicon.png"></image>
+      </view>
+      <view class="userFunctionText"><!--文字-->地图无法显示？</view>
+    </view>
+    <view class="userFunctionIconRight"><!--图片-->
+      <image class="userFunctionIconPicture" src="/images/question_gointo.png"></image>
+    </view>
+  </navigator>
+</view>
+<!--间隔白横线-->
+<view class="whiteDivideline"></view>
+<!--问题6-->
+<view class='userFunction'>
+  <navigator url="../question_6/question_6" class='allButton' style="width:100%">
+    <view class="userFunctionInformation"><!--左边图片+文字-->
+      <view class="userFunctionIconLeft"><!--图片-->
+        <image class="userFunctionIconPicture" src="/images/question_collecticon.png"></image>
+      </view>
+      <view class="userFunctionText"><!--文字-->添加收藏失败？</view>
+    </view>
+    <view class="userFunctionIconRight"><!--图片-->
+      <image class="userFunctionIconPicture" src="/images/question_gointo.png"></image>
+    </view>
+  </navigator>
+</view>
+<!--底部联系客服-->
+<view class="bottomContact">
+  <button open-type="contact" class="contactText">联系客服</button>
+</view>

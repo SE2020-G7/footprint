@@ -1,0 +1,78 @@
+<!--miniprogram/pages/collectlistpage/collectlistpage.wxml
+<text>这里是收藏列表</text>-->
+<view class='topTableSwiper' ><!--上方选项-->
+    <view class='table  {{currentData == 0 ? "tableBorer" : ""}}'  data-current = "0" bindtap='checkCurrent'>全部</view>
+    <view class='table  {{currentData == 1 ? "tableBorer" : ""}}'  data-current = "1" bindtap='checkCurrent'>景点</view>
+    <view class='table  {{currentData == 2 ? "tableBorer" : ""}}'  data-current = "2" bindtap='checkCurrent'>餐饮</view>
+    <view class='table  {{currentData == 3 ? "tableBorer" : ""}}'  data-current = "3" bindtap='checkCurrent'>住宿</view>
+</view>
+<swiper current="{{currentData}}" class='swiper'  duration="300" bindchange="bindchange" style="height:{{imgheights}}px;">
+  <swiper-item><!--全部列表-->
+    <view class="container" wx:for="{{collectList}}" wx:key="title"><!--打卡列表-->
+      <view class="card" bindtap='gotoInfo' data-title="{{item.title}}">
+        <view class="card-head"><!--头部：地址-->
+          <view class="title">
+            <text class="address">{{item.title}}</text>
+          </view>
+        </view>
+        <view class="card-boby"><!--主体：图片-->
+          <image src="{{item.image}}" mode="heightFix"></image>
+        </view>
+        <view class="card-foot"><!--下部：日期-->
+          <text>{{item.date}}</text>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+  <swiper-item><!--景点列表-->
+    <view class="container" wx:for="{{collectList1}}" wx:key="_id"><!--打卡列表-->
+      <view class="card" bindtap='gotoInfo' data-title="{{item.title}}">
+        <view class="card-head"><!--头部：地址-->
+          <view class="title">
+            <text class="address">{{item.title}}</text>
+          </view>
+        </view>
+        <view class="card-boby"><!--主体：图片-->
+          <image src="{{item.image}}" mode="heightFix"></image>
+        </view>
+        <view class="card-foot"><!--下部：日期-->
+          <text>{{item.date}}</text>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+  <swiper-item><!--餐饮列表-->
+    <view class="container" wx:for="{{collectList2}}" wx:key="_id"><!--打卡列表-->
+      <view class="card" bindtap='gotoInfo' data-title="{{item.title}}">
+        <view class="card-head"><!--头部：地址-->
+          <view class="title">
+            <text class="address">{{item.title}}</text>
+          </view>
+        </view>
+        <view class="card-boby"><!--主体：图片-->
+          <image src="{{item.image}}" mode="heightFix"></image>
+        </view>
+        <view class="card-foot"><!--下部：日期-->
+          <text>{{item.date}}</text>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+  <swiper-item><!--住宿列表-->
+    <view class="container" wx:for="{{collectList3}}" wx:key="_id"><!--打卡列表-->
+      <view class="card" bindtap='gotoInfo' data-title="{{item.title}}">
+        <view class="card-head"><!--头部：地址-->
+          <view class="title">
+            <text class="address">{{item.title}}</text>
+          </view>
+        </view>
+        <view class="card-boby"><!--主体：图片-->
+          <image src="{{item.image}}" mode="heightFix"></image>
+        </view>
+        <view class="card-foot"><!--下部：日期-->
+          <text>{{item.date}}</text>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+</swiper>

@@ -1,0 +1,95 @@
+/* miniprogram/pages/instructionspage/instructionspage.wxss */
+page{/*页面背景——灰色*/
+  background-color: #ededed;/*ededed*/
+}
+.title {/*“常见问题”标题*/
+  width: 100%;
+  /*height: 33px;*/
+  font-style: normal;
+}
+.titleText {/*标题文字*/
+  font-size: 17px;
+  color: #7f7f7f;
+  margin-left: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;/*上下*/
+}
+.userFunction {/*模块*/
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 0rpx;
+  overflow: hidden;
+  display: flex;/**/
+}
+.allButton {/*按钮*/
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  height: 56px;/**/
+  display: flex;/**/
+  /*font-size: 17px;inherit*/
+}
+.allButton::after {
+  border: #ffffff solid;
+}
+.userFunctionInformation {/*左边图标+文字说明*/
+  display: flex;
+}
+.userFunctionIconLeft {/*左边图标模块*/
+  display: flex;
+  margin: 14px;
+}
+.userFunctionIconPicture {/*图标图片*/
+  display: flex;
+  width: 28px;
+  height: 28px;
+}
+.userFunctionText {/*左边文字*/
+  font-size: 17px;
+  font-style: normal;
+  font-weight: normal;
+  width: 204px;/**/
+  position: relative;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;/*上下*/
+  /*align-items: left;左右*/
+  color: #000000;
+}
+.userFunctionIconRight {/*右边图标模块*/
+  display: flex;
+  margin: 14px;
+  position: absolute;
+  right: 14px;
+}
+.whiteDivideline {/*白色分割线*/
+  height: 1px;
+  background-color: #ffffff;
+  width: 56px;
+  position:relative;
+  top: 0px;
+}
+.bottomContact {/*底部联系我们*/
+  width: 100%;
+  font-style: normal;
+  background-color: #ededed;
+  position:fixed;
+  bottom:0;
+}
+.contactText {/*联系我们字样*/
+  background-color: #ededed;
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-weight: normal;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;/*上下*/
+  align-items: center;/*左右？*/
+  color: #576b95;
+}

@@ -1,0 +1,22 @@
+<!--miniprogram/pages/question_3/question_3.wxml-->
+<view class="titleModule"><!--问题标题-->
+  <text class="title">无法编辑打卡？</text>
+</view>
+<view class="textModul"><!--问题解答-->
+  <text class="text">请检查手机网络是否开启，若已经开启网络，请重新进入页面，再次尝试编辑，若依旧未能解决问题，请点击页面底部“联系客服”进行意见反馈。</text>
+
+  <view><!--图文解释-->
+    <text class="text">解决方法如下：</text>
+    <text class="text">打开手机网络等待片刻；</text>
+    <image mode="widthFix" src="http://m.qpic.cn/psc?/V54au59j3fpkzz3KIMzV3ivNbu1pxpr3/ruAMsa53pVQWN7FLK88i5gEbzdTWiLL8VnU.9ZQH95YCRB814DpIni9LVQmLXaa61S3fr4fj9sW8LawsXiUwQ6QHPlRJjyiCTkkQIVX2cYA!/b&bo=RQPDAgAAAAADB6U!&rf=viewer_4"></image>
+
+    <text class="text">若还未解决您的问题，请点击页面下方的“联系客服”，我们期待你的反馈！</text>
+    <image mode="widthFix" src="http://m.qpic.cn/psc?/V54au59j3fpkzz3KIMzV3ivNbu1pxpr3/ruAMsa53pVQWN7FLK88i5nv1puEj7.Zk66dz*ZXP1qbms3nA.F3En9BUfpnEo.5X9UVSELke*Wnfqm.l*Oz8Vj3TnsgL4fcUo6BaGrrNCw8!/b&bo=1QKYBAAAAAADB2k!&rf=viewer_4"></image>
+    <button open-type="contact" class="contactText">联系客服</button>
+  </view>
+</view>
+
+<!--底部联系客服
+<view class="bottomContact">
+  
+</view>-->

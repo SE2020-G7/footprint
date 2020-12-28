@@ -1,0 +1,136 @@
+.titleDate {/*抬头日期*/
+  width: 100%;
+  height: 50px;
+  font-size: 17px;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+}
+.titleDate text {
+  line-height: 56px;
+  text-align: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;/*水平居中*/
+  margin: 0 0;
+  background-color: #000000;
+}
+.container{
+  width: 100%;
+}
+swiper{
+  width: 100%;
+  height: 220px;
+}
+.swiperImg{
+  border-top: 1px solid #EDEDED;
+  border-bottom: 1px solid #EDEDED;
+}
+.addressTitle {/*模块*/
+  width: 100%;
+  height: 56px;
+  background-color: #fff;
+  margin-top: 0rpx;
+  overflow: hidden;
+  display: flex;/**/
+}
+.addressPic image {/*图标图片*/
+  display: flex;
+  width: 28px;
+  height: 28px;
+  margin: 14px;
+}
+.addressText {/*左边文字*/
+  font-size: 17px;
+  font-style: normal;
+  font-weight: normal;
+  position: relative;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #000000;
+}
+.addressDate {/*右边日期*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: normal;
+  /*margin: 14px;
+  position: relative;
+  right: 14px;*/
+  color: #000000;
+}
+
+.textModul {/*输入框*/
+  background-color: #ffffff;
+  width: 100%;
+  height: 150px;
+  display: flex;
+}
+.text {/*输入文本框*/
+  margin-right: 14px;
+  margin-left: 14px;
+  height: 100px;width: 100%;
+  margin-top: 5px;/*background-color: #5a98b1;*/
+}
+.recordType {/*下方属性*/
+  width: 100%;
+  background-color: #ffffff;
+  overflow: hidden;
+  display: flex;
+  position: fixed;/*页面框底部*/
+  bottom: 0px;
+}
+.addressIconLeft {/*左边图标模块*/
+  display: flex;
+  margin: 14px;
+}
+.addressIconLeft text {/*标签文字*/
+  height: 28px;
+  font-size: 17px;
+  color: #7f7f7f;
+  line-height: 28px;
+  margin-left: 10px;
+}
+.addressPicture {/*图标图片*/
+  display: flex;
+  width: 28px;
+  height: 28px;
+}
+.addressRight {/*右边图标模块*/
+  display: flex;
+  margin: 14px;
+  position: absolute;
+  right: 5px;
+}
+.addressRight2 {/*右边图标模块2*/
+  display: flex;
+  margin: 14px;
+  position: absolute;
+  right: 47px;
+}
+.shareIcon {/*分享按钮样式*/
+  height: 56px;
+  width: 56px;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  position: absolute;
+  right: 89px;
+}
+.shareIcon image {
+  margin-top: 14px;
+  margin-bottom: 14px;
+  height: 28px;
+  width: 28px;
+  position: relative;
+  right: 0;
+}
